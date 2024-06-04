@@ -7,6 +7,14 @@
 #' @examples
 #' serpapi_google_lens_search("https://i.imgur.com/HBrB8p0.png", "your_api_key")
 serpapi_google_lens_search <- function(image_url, api_key) {
+  # Load necessary libraries
+  if (!requireNamespace("httr", quietly = TRUE)) {
+    stop("Package 'httr' is required but is not installed.")
+  }
+  if (!requireNamespace("jsonlite", quietly = TRUE)) {
+    stop("Package 'jsonlite' is required but is not installed.")
+  }
+  
   library(httr)
   library(jsonlite)
   
