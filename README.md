@@ -14,6 +14,13 @@ install_github("massimo-terenzi/serpapiWrapper")
 ```r
 library(serpapiWrapper)
 
-result <- serpapi_google_lens_search("https://i.imgur.com/HBrB8p0.png", "your_api_key")
+#library(httr)
+#library(jsonlite)
 
-write.csv(result, file = output.csv)
+image_url <- "your_link_here.jpg"
+api_key <- "your_api_key_here"
+
+result <- serpapi_google_lens_search(image_url, api_key, hl = "en", country = "us", no_cache = TRUE, async = FALSE, output = "json")
+print(result)
+
+write.csv(result, file = "output.csv")
