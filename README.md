@@ -20,7 +20,7 @@ library(serpapiWrapper)
 image_url <- "your_link_here.jpg"
 api_key <- "your_api_key_here"
 
-result <- serpapi_google_lens_search(image_url, api_key, hl = "en", country = "us", no_cache = TRUE, async = FALSE, output = "json")
+result <- serpapi_google_lens_search(image_url, api_key)
 print(result)
 
 write.csv(result, file = "output.csv")
