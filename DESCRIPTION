@@ -2,8 +2,8 @@ Package: serpapiWrapper
 Type: Package
 Title: A Wrapper for SerpAPI Google Lens Search
 Version: 0.1.0
-Author: Your Name
-Maintainer: Your Name <youremail@example.com>
+Author: Massimo Terenzi  
+Maintainer: Massimo Terenzi <massimo.terenzi@uniurb.it>
 Description: This package provides a function to perform Google Lens searches using SerpAPI.
 License: MIT
 Imports: httr, jsonlite
